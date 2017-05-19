@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*权限路由*/
+Route::get('login','authController@index');
+Route::post('login','authController@index');
